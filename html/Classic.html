@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>个人相册</title>
+	<link href="../css/head.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../swiper/swiper-bundle.css">
+	<style type="text/css">
+		.photo {
+			width: 1200px;
+			height: 900px;
+			border: 1px solid #FFC0CB;
+			position: relative;
+			background-color: rgb(6, 1, 1);
+		}
+
+		.hid {
+			width: 600px;
+			height: 300px;
+			display: none;
+		}
+
+		.ph1:hover .hid {
+			display: block;
+		}
+
+		.ph1 {
+			box-sizing: border-box;
+			width: 100px;
+			height: 120px;
+			border: 1px solid #000000;
+			position: relative;
+			top: 700px;
+			left: 320px;
+			float: left;
+			margin-left: 5px;
+		}
+
+		.ph1:hover {
+			border: 1px solid #fff;
+		}
+
+		.ph1 img {
+			background-repeat: no-repeat;
+			background-size: 250px 150px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.hid {
+			width: 800px;
+			height: 500px;
+			position: absolute;
+			bottom: 200px;
+			box-shadow: -15px -10px 10px #CCCCCC;
+			background-color: #898989;
+		}
+
+
+		.hid1 {
+			left: -130px;
+			display: block;
+
+		}
+
+		.hid2 {
+			left: -235px;
+
+		}
+
+		.hid3 {
+			left: -340px;
+		}
+
+		.hid4 {
+			left: -445px;
+
+		}
+
+		.hid5 {
+			left: -550px;
+		}
+
+		.text {
+			width: 800px;
+			height: 120px;
+			/* background-color: #333333; */
+			color: #FFFFFF;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		h4 {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		/* 轮播图 */
+		.swiper {
+			width: 800px;
+			height: 390px;
+		}
+
+		.swiper-wrapper>#s1 {
+			background-image: url('../img/swimg/sw01.jpg');
+			background-size: 800px 390px;
+
+		}
+
+		.swiper-wrapper>#s2 {
+			background-image: url('../img/swimg/sw02.jpg');
+			background-size: 800px 390px;
+
+		}
+
+		.swiper-wrapper>#s3 {
+			background-image: url('../img/swimg/sw03.jpg');
+			background-size: 800px 390px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="top_box">
+			<div class="car"></div>
+			<span id="headfont"><em id="h12">JDM</em> </span>
+		</div>
+		<!-- 导航栏 -->
+		<div class="top_nav">
+			<ul>
+				<li id="li_1"><a href="../index.html">Home</a></li>
+				<li><a href="./Archieve.html">Archieve</a>
+					<ul id="ul_1">
+						<li><a href="./Origin.html">Origin</a></li>
+						<li><a href="./Origin.html">Now</a></li>
+					</ul>
+				</li>
+				<li>
+					<div
+						style="width: 60px; height: 60px; background-image: url(../img/f3.png); background-repeat:no-repeat;background-size: 60px 60px;">
+					</div>
+				</li>
+				<li><a href="./Classic.html" style="color: #FF8726;">Classic</a></li>
+				<li><a href="./Future.html">Future</a></li>
+
+			</ul>
+		</div>
+		<div id=top_nav1></div>
+
+		<!-- 个人相册 -->
+		<div class="photo">
+			<div class="ph1">
+				<div class="hid hid1">
+					<!-- 轮播图 -->
+					<div class="swiper">
+						<div style="background-image:url(./img/wp8300422.jpg)" data-swiper-parallax="-23%"
+							data-swiper-parallax-duration="3000"></div>
+						<!-- <div style="background-image:url(./img/yb.jpg)" data-swiper-parallax="-23%"
+							data-swiper-parallax-duration="3000"></div> -->
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" id="s1">
+								<div class="title" data-swiper-parallax="-100"></div>
+								<div class="subtitle" data-swiper-parallax="-200"></div>
+								<div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1500">
+									<p></p>
+								</div>
+								<div data-swiper-parallax="0" data-swiper-parallax-opacity="0.3"></div>
+								<div data-swiper-parallax-scale="0.15"></div>
+							</div>
+							<div class="swiper-slide" id="s2">
+								<div class="title" data-swiper-parallax="-100"></div>
+								<div class="subtitle" data-swiper-parallax="-200"></div>
+								<div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1500">
+									<p></p>
+								</div>
+								<div data-swiper-parallax="0" data-swiper-parallax-opacity="0.3"></div>
+								<div data-swiper-parallax-scale="0.15"></div>
+							</div>
+							<div class="swiper-slide" id="s3">
+								<div class="title" data-swiper-parallax="-100"></div>
+								<div class="subtitle" data-swiper-parallax="-200"></div>
+								<div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="1500">
+									<p></p>
+								</div>
+								<div data-swiper-parallax="0" data-swiper-parallax-opacity="0.3"></div>
+								<div data-swiper-parallax-scale="0.15"></div>
+							</div>
+						</div>
+						<!-- 如果需要分页器 -->
+						<div class="swiper-pagination"></div>
+
+						<!-- 如果需要导航按钮 -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!-- 如果需要滚动条 -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<!-- <div class="text">
+						<h4>生活中的我</h4>
+						<p>生活中的我是一个开朗、乐观，对生活充满希望，喜欢挑战，不断追求卓越、追求进步！</p>
+					</div> -->
+					<h3>JDM是一个广泛的概念，可以是一辆车，可以是一类改装风格，也可以是一种汽车文。</h3>
+				</div>
+				<img src="../img/讴歌NSX02.jpg" />
+			</div>
+			<div class="ph1">
+				<div class="hid hid2"><img src="../img/photo-img22.jpg" />
+					<div class="text">
+						<h4>Nsx</h4>
+						<p>本田NSX是日本汽车制造商本田制造的一款跑车，拥有全铝车身，中置后驱布局，一度被称作“东瀛法拉利”。</p>
+					</div>
+				</div>
+				<img style="background-image: url(../img/讴歌NSX.jpg);" />
+			</div>
+			<div class="ph1">
+				<div class="hid hid3"><img src="../img/" />
+					<div class="text">
+						<h4>GT-R</h4>
+						<p>日产GT-R指的是日产汽车生产的高性能高可靠性的大马力跑车。在经过多年的演化改进之后，出现了GT-R车型</p>
+					</div>
+				</div>
+				<img style="background-image: url('../img/wp8300391.jpg');" />
+			</div>
+			<div class="ph1">
+				<div class="hid hid4">
+					<div class="imgAll"><img src="../img/wp8300391.jpg" />
+						<div class="text">
+							<h4>Sqpra</h4>
+							<p>丰田Supra是丰田和宝马联合打造的一款跑车，与宝马Z4共享平台</p>
+						</div>
+					</div>
+
+				</div>
+				<img style="background-image: url(../img/丰田FT1.jpg);" />
+			</div>
+			<div class="ph1">
+				<div class="hid hid5">
+					<div class="imgAll"><img src="../img/photo-img11.jpg" />
+						<div class="text">
+							<h4>Sqpra</h4>
+							<p>Square是</p>
+						</div>
+					</div>
+
+				</div>
+				<img src="../img/ft.jpg" />
+			</div>
+		</div>
+
+
+		<!--页脚-->
+		<footer class="footer">
+			Japanese domestic market
+		</footer>
+	</div>
+	<script src="../swiper/swiper-bundle.js"></script>
+	<script>
+		// 轮播图
+		var mySwiper = new Swiper('.swiper', {
+			parallax: true,
+			// direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+
+			// 如果需要分页器
+			pagination: {
+				el: '.swiper-pagination',
+			},
+
+			// 如果需要前进后退按钮
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// 如果需要滚动条
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+			autoplay: {
+				delay: 5500, //自动切换的时间间隔，单位ms
+				disableOnInteraction: false //用户操作swiper之后，是否禁止autoplay
+			},
+		})        
+	</script>
+</body>
+
+</html>

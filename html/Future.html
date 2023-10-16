@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>求职意向</title>
+	<link href="../css/head.css" rel="stylesheet" />
+	<style type="text/css">
+		* {
+			color: white;
+		}
+
+		.objective {
+			width: 1200px;
+			height: 1100px;
+			border: 1px #ccc solid;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			background-color: #ffe3e3;
+			background-image: url('../img/sit.jpg');
+		}
+
+		.left {
+			padding-top: 20px;
+			width: 300px;
+			height: 480px;
+			position: fixed;
+			background-color: #fcc496;
+			color: #FFFFFF;
+			text-align: center;
+		}
+
+		.via {
+			width: 100px;
+			border-radius: 50%;
+			margin: 30px auto 0px;
+			overflow: hidden;
+		}
+
+		.via img {
+			width: 100%
+		}
+
+		h3 {
+			text-align: center;
+			padding: 50px 0px;
+		}
+
+		.a1 {
+
+			text-align: center;
+
+			width: 200px;
+			margin: 70px auto;
+		}
+
+		.a1 a {
+			text-decoration: none;
+			color: #ff8726;
+			padding: 15px 50px;
+			line-height: 30px;
+			background-color: #FFFFFF;
+			border-radius: 5%;
+		}
+
+		.a1:hover a {
+			background-color: #ff8726;
+			color: #FFFFFF;
+			border: 1px solid #FFFFFF;
+		}
+
+		.right {
+			padding-top: 20px;
+			float: right;
+			width: 800px;
+			height: 500px;
+			margin-right: 70px;
+		}
+
+		.right_top {
+			width: 300px;
+			margin: 0px auto 50px;
+			text-align: center;
+		}
+
+		.h3 {
+			padding: 30px;
+		}
+
+		hr {
+			margin-bottom: 30px;
+		}
+
+		/* 进度条样式 */
+		.right_main>.container {
+			width: 100%;
+			background-color: #ddd;
+		}
+
+		.right_main p {
+			color: #ff8726;
+			padding: 10px;
+		}
+
+		.skills {
+			text-align: right;
+			padding-right: 20px;
+			line-height: 30px;
+			color: white;
+		}
+
+		.elc {
+			width: 60%;
+			background-color: #4CAF50;
+		}
+
+		.tog {
+			width: 30%;
+			background-color: #2196F3;
+		}
+
+		.tra {
+			width: 10%;
+			background-color: #f44336;
+		}
+
+		.right_main ul {
+			padding-top: 20px;
+		}
+
+		.right_main ul li {
+			width: 500px;
+			line-height: 30px;
+			margin: 30px 0px 0px 200px;
+		}
+
+		.h32 {
+			width: 200px;
+			margin-left: 45px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<!-- 定盒 -->
+		<div class="top_box">
+			<div class="car"></div>
+			<span id="headfont"><em id="h12">JDM</em> </span>
+		</div>
+		<!-- 导航栏 -->
+		<div class="top_nav">
+			<ul>
+				<li id="li_1"><a href="../index.html">Home</a></li>
+				<li><a href="./Archieve.html">Archieve</a>
+					<ul id="ul_1">
+						<li><a href="./Origin.html">Origin</a></li>
+						<li><a href="./Now.html">Now</a></li>
+					</ul>
+				</li>
+				<li>
+					<div
+						style="width: 60px; height: 60px; background-image:url(../img/f3.png) ; background-size: 60px;">
+					</div>
+				</li>
+				<li><a href="./Classic.html">Classic</a></li>
+				<li><a href="./Future.html" style="color: #FF8726;">Future</a></li>
+
+			</ul>
+		</div>
+		<div id=top_nav1></div>
+
+		<div class="objective">
+			<!-- 左端固定 -->
+			<div class="left">
+				<div class="via"><img src="../img/car.png" /></div>
+				<h3 class="h32">JDM</h3>
+				am studious and aspirant, honest, dedicated, with a strong sense of responsibility,to work seriously,
+				rigorous and responsible.
+				<div class="a1"><a href="../index.html">了解更多</a></div>
+			</div>
+			<div class="right">
+				<div class="right_top">
+					<h3 class="h3">汽车行业的未来</h3>
+					<hr />
+					the automotive of industry
+				</div>
+				<div class="right_main">
+					<!-- 进度条 -->
+					<p>新能源汽车</p>
+					<div class="container">
+						<div class="skills elc">60%</div>
+					</div>
+
+					<p>混合动力汽车</p>
+					<div class="container">
+						<div class="skills tog">30%</div>
+					</div>
+
+					<p>常规燃油车</p>
+					<div class="container">
+						<div class="skills tra">10%</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right_top">
+					<h3 class="h3">未来</h3>
+					<hr />
+					Future
+				</div>
+				<div class="right_main">
+					<ul>
+						<li> 纯燃油车也许终究会被替代</li>
+						<li>属于JDM的黄金时代也已经过去</li>
+						<li>然而我们的国家汽车行业发展迅速，总有一天会有我们自己的CDM</li>
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!--页脚-->
+		<div class="footer" style="text-align: center;">
+			Japanese domestic market
+		</div>
+	</div>
+</body>
+
+</html>
